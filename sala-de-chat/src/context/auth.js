@@ -12,7 +12,7 @@ const AuthProvider = (props) => {
         if (!user) {
             
         }
-        setUser(user)
+        setUser(user);
     }
     const value = { user, login };
     return <AuthContext.Provider value={value}{...props} />;

@@ -1,4 +1,4 @@
-import { AuthenticatedApp } from './components/AuthenticatedApp'
+import { AuthenticatedApp } from './components/AuthenticatedApp/index.jsx'
 import { UnauthenticatedApp } from './components/UnauthenticatedApp'
 import { useAuth } from './hooks/useAuth';
 import './App.css'

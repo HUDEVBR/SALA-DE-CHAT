@@ -1,7 +1,5 @@
 import React from 'react';
-import { loginWithGoogle } from '../services/firebase';
-import { AuthContext } from '../context/auth';
-//comentário
+import { loginWithGoogle } from '../services/firebase'; 
 
 const AuthContext = React.createContext();
 
@@ -20,16 +18,5 @@ const AuthProvider = (props) => {
     return <AuthContext.Provider value={value}{...props} />;
 };
 
-function useAuth(){
-    const value = React.useContext(AuthContext);
-
-    if (!value) {
-        throw new Error("AuthContext's value is undefined.");
-    }
-
-    return value;
-
-}
 
 export { AuthContext, AuthProvider };
-export { useAuth };

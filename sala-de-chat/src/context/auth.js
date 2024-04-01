@@ -1,6 +1,7 @@
 import React from 'react';
 import { loginWithGoogle } from '../services/firebase';
 import { AuthContext } from '../context/auth';
+//comentário
 
 const AuthContext = React.createContext();
 

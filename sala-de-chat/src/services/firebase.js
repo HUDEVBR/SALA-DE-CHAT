@@ -1,9 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { GoogleAuthProvider, signInWithPopup, getAuth } from 'firebase/auth';
-const CHAT_API_KEY = process.env.REACT_APP_KEY
 
 const firebaseConfig = {
-    apiKey: `${CHAT_API_KEY}`,
+    apiKey: `AIzaSyBiKVn8jv-BHSqSM2P7S3HzDX19lIHkejs`,
     authDomain: 'sala-de-chat-14d9c.firebaseapp.com',
     projectId: "sala-de-chat-14d9c",
     storageBucket: "sala-de-chat-14d9c.appspot.com",

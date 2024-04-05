@@ -9,7 +9,6 @@ function AuthenticatedApp() {
             <Routes>
                 <Route path='/' element={<Landing />} />
                 <Route path='/room/:id' element={<ChatRoom />} />
-                
             </Routes>
         </BrowserRouter>
     )

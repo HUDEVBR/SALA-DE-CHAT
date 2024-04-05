@@ -1,5 +1,5 @@
 const chatRooms = [
-    { id: 'caes', title: '🐶 Cachorros 🐶' },
+    { id: 'pets', title: '🐶 Pets 🐈' },
     { id: 'comida', title: '🍔 Comida 🍔' },
     { id: 'assuntosGerais', title: '💬 Assuntos Gerais 💬' },
     { id: 'noticias', title: '🗞 Notícias 🗞' },
@@ -11,4 +11,7 @@ const chatRooms = [
     { id: 'política', title: '👨🏾‍💼 Política 👨🏾‍💼'},
 ]
 
+
+
 export { chatRooms };
+

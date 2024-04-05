@@ -1,13 +1,15 @@
 import { Link, useParams } from 'react-router-dom';
 import { chatRooms } from '../../data/chatRooms';
 import './styles.css'
+import { MessageInput } from '../MessageInput';
+import erro404 from '../../images/error_404.jpg'
 
 function ChatRoom() {
     const params = useParams();
 
     const room = chatRooms.find((x) => x.id === params.id);
     if (!room) {
-        
+        <img src={erro404} alt='ERRO 404'/>
     }
 
     return (
@@ -17,7 +19,7 @@ function ChatRoom() {
                 <Link to='/'>⬅️ Voltar para as Salas de Chat</Link>
             </div>
             <div className='messages-container'>
-                {/*TODO*/ }
+                <MessageInput roomId={ room.id }/>
             </div>
         </>
     )

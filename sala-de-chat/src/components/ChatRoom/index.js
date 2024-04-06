@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { chatRooms } from '../../data/chatRooms';
 import './styles.css'
 import { MessageInput } from '../MessageInput';
+import { MessageList } from '../MessageList';
 import erro404 from '../../images/error_404.jpg'
 
 function ChatRoom() {
@@ -19,7 +20,8 @@ function ChatRoom() {
                 <Link to='/'>⬅️ Voltar para as Salas de Chat</Link>
             </div>
             <div className='messages-container'>
-                <MessageInput roomId={ room.id }/>
+                <MessageInput roomId={room.id} />
+                <MessageList roomId={room.id}/>
             </div>
         </>
     )

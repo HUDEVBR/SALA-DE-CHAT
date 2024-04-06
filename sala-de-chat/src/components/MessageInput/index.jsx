@@ -26,7 +26,7 @@ function MessageInput({ roomId }) {
                 onChange={handleChange}
                 className="message-input"
                 required
-                minLength={10}
+                minLength={1}
             />
             <button type='submit' disabled={value < 1} className="send-message">
                 Enviar
